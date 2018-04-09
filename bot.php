@@ -9,8 +9,8 @@ Modified @ GMC - GMC
 require_once('./line_class.php');
 require_once('./unirest-php-master/src/Unirest.php');
 
-$channelAccessToken = 'hsC1JrkmF2oUvLLKM1LOqKq+UTeafwpqqP6yVs/vHopxbFsFDhE0Uk4NXCgXAu0jguVbGSG3MzcczlWHhzXN1SsfrqOSZ3KXs3Qx+IH4KOPDKgjfvYseXq11voIhZi7lPEoce8A6/3M6xGrwwOtCjAdB04t89/1O/w1cDnyilFU='; //sesuaikan 
-$channelSecret = '13fe844a8b2a3ce8d51b809485e5fcdd';//sesuaikan
+$channelAccessToken = '+BT+h9mIB2G5tZyYAg9HEXCzor/KVCnW+7R/7WCBRgid6GY8ppOOdVB1GGslkwBL7YN1I3vWVLaaz2H3QK82/b+QJllx6sOKp5Nsj6IGz8W9U2j4OwibNaiEcbWXIVSvPpwgShEny/OALAked/YbsQdB04t89/1O/w1cDnyilFU='; //sesuaikan 
+$channelSecret = '10c80d4dabc89566dd5259c579a49702';//sesuaikan
 
 $client = new LINEBotTiny($channelAccessToken, $channelSecret);
 
@@ -69,7 +69,7 @@ function shalat($keyword) {
 
 //show menu, saat join dan command /menu
 if ($type == 'join' || $command == '/menu') {
-    $text = "Assalamualaikum Kakak, aku adalah bot jadwal shalat nya GMC, silahkan ketik\n\n/shalat <nama tempat>\n\nnanti aku bakalan kasih tahu jam berapa waktunya shalat ^_^";
+    $text = "Assalamualaikum Kakak, aku adalah bot jadwal shalat nya Genre Music Community, silahkan ketik\n\n/shalat <nama tempat>\n\nnanti aku bakalan kasih tahu jam berapa waktunya shalat ^_^";
     $balas = array(
         'replyToken' => $replyToken,
         'messages' => array(
